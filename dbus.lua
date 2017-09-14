@@ -105,7 +105,7 @@ end
 function dbus.iter_args(iter, alltype)
     local args = { len = 0 }
     if not iter then return args end
-    typ = alltype or iter:get_arg_type()
+    local typ = alltype or iter:get_arg_type()
     while true do
         if not typ then
             args.len = args.len + 1
