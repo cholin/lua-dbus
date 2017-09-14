@@ -1,7 +1,7 @@
 
 local dbus = {
     property = {},
-    raw = require("lua-dbus.awesome.init"),
+    raw = require("lua-dbus.dbus"),
 --     interface = require("lua-dbus.interface"),
     signals = { system = {}, session = {} },
 }
